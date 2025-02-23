@@ -54,7 +54,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Deploy to Heroku (optional)
+      # Optional: Here you can add deployment steps to another platform.
+      # For example, deploy to a cloud platform like AWS, Google Cloud, Azure, or another system.
+      - name: Deploy to your chosen platform (AWS, Azure, etc.)
         run: |
-          git remote add heroku https://git.heroku.com/your-heroku-app.git
-          git push heroku main
+          # Example for AWS Elastic Beanstalk or other deployment systems
+          echo "Deploying to cloud platform"
+          # Replace this with the appropriate deploy script for your platform
