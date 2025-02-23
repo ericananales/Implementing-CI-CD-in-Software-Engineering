@@ -25,7 +25,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt  # Install all dependencies from requirements.txt
+          pip list  # Show installed packages to confirm pytest is included
           pip install pytest  # Explicitly install pytest to ensure it's available
+          pip list  # Verify pytest is installed after running the command
 
       - name: Check pytest version (debugging)
         run: |
