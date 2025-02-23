@@ -1,0 +1,30 @@
+# My Flask Web Application
+
+This is a simple web application built with Flask.
+
+## Setup
+- Clone the repository: `git clone <repository_url>`
+- Install dependencies: `pip install -r requirements.txt`
+- Start the app: `python src/app.py`
+
+## Features
+- Simple API with a route returning "Hello, World!"
+
+
+### Explanation:
+
+1. **Project Setup**: Instructions for cloning the repository, setting up a virtual environment, and installing dependencies.
+2. **Flask Version Conflict**: Instructions for fixing the version conflict issue and reinstalling dependencies.
+3. **Run the Application Locally**: Instructions on how to run the Flask app locally.
+4. **Docker Support**: Instructions for building and running the Docker container.
+5. **CI/CD with GitHub Actions**: Details on how the CI/CD pipeline is set up and how to trigger it.
+6. **Deployment**: Optional instructions for deploying to Heroku.
+
+### How to Create the README File:
+
+1. In your project folder, create a new file called `README.md`.
+2. Copy and paste the content above into that file.
+3. Save the file.
+
+This README will provide clear instructions for setting up the project, fixing issues, and running the application both locally and in a Docker container.
+
