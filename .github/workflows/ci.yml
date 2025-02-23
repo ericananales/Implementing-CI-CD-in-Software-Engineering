@@ -30,9 +30,9 @@ jobs:
       - name: Set PYTHONPATH
         run: echo "PYTHONPATH=$(pwd)/src" >> $GITHUB_ENV  # Add src to PYTHONPATH
 
-      - name: Check pytest version (debugging)
+      - name: Print environment variables for debugging
         run: |
-          pytest --version  # Check if pytest is installed and available
+          echo "PYTHONPATH is: $PYTHONPATH"  # Check the PYTHONPATH for debugging
 
       - name: Run tests
         run: |
