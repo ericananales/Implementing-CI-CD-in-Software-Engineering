@@ -19,21 +19,21 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8'  # Ensure correct Python version
+          python-version: '3.8'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt  # Install all dependencies
-          pip install pytest  # Explicitly install pytest
+          pip install -r requirements.txt  # Install all dependencies from requirements.txt
+          pip install pytest  # Explicitly install pytest to ensure it's available
 
       - name: Check pytest version (debugging)
         run: |
-          pytest --version  # Output pytest version to confirm it's installed
+          pytest --version  # Check if pytest is installed and available
 
       - name: Run tests
         run: |
-          pytest  # Run your tests
+          pytest  # Run your tests using pytest
 
   build:
     runs-on: ubuntu-latest
